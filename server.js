@@ -10,7 +10,7 @@ const ratesRoute = require('./routes/exchangeRates');
 const app = express();
 
 // middleware
-// log request during development - can be removed in production - MK
+// log request details during development - can be removed in production - MK
 app.use((req, res, next) => {
     console.log(`The request path: ${req.path}`);
     console.log(`The request method: ${req.method}`);
